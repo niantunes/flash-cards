@@ -14,6 +14,10 @@ const answer = document.querySelector('#card-answer .card-question .card-questio
 const cardQuestion = document.querySelector('#card-question');
 const cardAnswer = document.querySelector('#card-answer');
 
+// Texto de finalização do quiz
+const points = document.querySelector('.points');
+const accuracy = document.querySelector('.accuracy');
+
 // Teste de estrutura de questões a partir de estrutura JSON
 const listquestions = '[{"question": "Who is Peter Parkar", "answer": "Spider-man"}, {"question": "Who is Tio Ben", "answer": "Uncle"}, {"question": "Who is Mary Jane", "answer": "Girlfriend"}]';
 
@@ -22,6 +26,9 @@ const questions = JSON.parse(listquestions);
 
 // Índice para troca de perguntas
 let index = 0;
+
+// Contador de pontos
+let score = 0;
 
 // Inicialização
 init();
@@ -82,4 +89,13 @@ function showAnswer () {
 function showQuestion () {
     cardQuestion.hidden = false;
     cardAnswer.hidden = true;
+}
+
+// Finalização do quiz
+function quizComplete () {
+    flashcard.hidden = true;
+    completeQuiz.hidden = false;
+
+    points.textContent = score + ' out of ' + questions.length;
+    accuracy.textContent = 'Accuracy ' + Math.floor((score * 100) / questions.length) + '%';
 }
