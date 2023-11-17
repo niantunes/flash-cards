@@ -4,7 +4,7 @@ Este é um projeto de sistema de flash cards desenvolvido em HTML, CSS e JavaScr
 
 ## Funcionalidades
 
-- **Criação e Importação de Estrutura:** A aplicação permite que os usuários importem uma estrutura pré-definida de perguntas e respostas, que serão automaticamente convertidas em flash cards.
+- **Configuração de Flash Cards:** A aplicação permite que os usuários definam uma estrutura (em código) de perguntas e respostas, que serão automaticamente convertidas em flash cards.
 
 - **Estudo Interativo:** Os usuários podem estudar suas perguntas e respostas de forma interativa, visualizando as perguntas e, em seguida, revelando as respostas.
 
@@ -22,7 +22,7 @@ Para utilizar o sistema de flash cards, você precisará de:
 
 2. Abra o arquivo `index.html` em seu navegador da web.
 
-3. Na página inicial, você pode criar novos flash cards ou importar uma estrutura de perguntas e respostas.
+3. Em cídigo, você pode criar novos flash cards em uma estrutura JSON de perguntas e respostas.
 
 4. Configure as opções de estudo de acordo com suas preferências.
 

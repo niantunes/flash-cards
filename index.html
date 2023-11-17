@@ -23,15 +23,40 @@
 </head>
 
 <body>
-
+<div class="logo-quizz">
+  <img src="img/quizztimelogo.png" height=100px>
+</div>
   <div class="card-area">
-    <div class="card-question">
-      Question:
-      <p class="card-question-text"></p>
+    <div id="card-question">
+      <div class="card-question">
+        Question:
+        <p class="card-question-text"></p>
+      </div>
     </div>
+
+    <div id="card-answer" hidden>
+      <div class="card-question">
+        Answer:
+        <p class="card-question-text"></p>
+      </div>
+    </div>
+    <div class="flip-card">
+      Flip Card
+    </div>
+
     <div class="card-button">
       <button class="button button-incorrect">Incorrect!</button>
       <button class="button button-correct">Correct!</button>
+    </div>
+  </div>
+
+  <div class="complete-quiz card-area" hidden>
+    <div class="card-question">
+      <p class="card-question-text">Quiz Complete!</p>
+    </div>
+    <div class="score">
+      <p class="score-text points"></p>
+      <p class="score-text accuracy"></p>
     </div>
   </div>
 
