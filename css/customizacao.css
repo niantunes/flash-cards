@@ -1,0 +1,45 @@
+.card-area {
+    display: flex;
+    flex-direction: column;
+    margin: 20% 30%;
+    padding: 10%;
+    border-radius: 5%;
+    background-color: white;
+}
+
+.card-question {
+    flex-direction: column;
+    font-size: 1em;
+    font-family: sans-serif;
+    color: lightgray;
+    text-align: center;
+}
+
+.card-question-text {
+    margin: 0;
+    font-size: 1.5em;
+    font-weight: 500;
+    color: black;
+}
+
+.card-button {
+    margin: 8em 0 0 0;
+    flex-direction: row;
+    text-align: center;
+}
+
+.button {
+    padding: 0.5em;
+    border-radius: 10%;
+    border: 0.5px solid rgba(0, 0, 0, .2);
+}
+
+.button-incorrect {
+    background-color: white;
+    color: lightgrey;
+}
+
+.button-correct {
+    background-color: darkorange;
+    color: white;
+}
